@@ -4,7 +4,13 @@ The idea and initial version of the application is based on the course from Step
 
 Here is a running [demo](https://stormy-reaches-19231.herokuapp.com/) on Heroku.
 
-Following technologies are used:
+# Build
+* Clone the repository
+* Cd root directory and perform `npm install`
+* Cd client directory and perform `npm install`
+* Create config/dev.js file with all necessary keys for local version
+
+# Techstack
 #### Client
 * React
 * Redux (state management)
@@ -26,10 +32,3 @@ Following technologies are used:
 * [mLab](https://mlab.com/) (hosting MongoDB instances)
 * Sendgrid
 * Stripe
-
-
-# Build
-* Clone the repository
-* Cd root directory and perform `npm install`
-* Cd client directory and perform `npm install`
-* Create config/dev.js file with all necessary keys for local version
