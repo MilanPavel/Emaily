@@ -6,9 +6,30 @@ Here is a running [demo](https://stormy-reaches-19231.herokuapp.com/) on Heroku.
 
 # Build
 * Clone the repository
-* Cd root directory and perform `npm install`
-* Cd client directory and perform `npm install`
-* Create config/dev.js file with all necessary keys for local version
+* Cd _root_ directory and perform `npm install`
+* Cd _client_ directory and perform `npm install`
+* Cd _root_ directory and create `config/dev.js` file with all necessary keys for local version
+
+Example dev.js file:
+```
+module.exports = {
+    googleClientID: '',
+    googleClientSecret: '',
+    mongoURI: '',
+    cookieKey: '123123123',
+    stripePublishableKey: '',
+    stripeSecretKey: '',
+    sendGridKey: '',
+    redirectDomain: 'http://localhost:3000'
+};
+```
+All keys must be correctly filled out. You need to suply following info:
+* Google creds to enable Google OAuth login (only Google OAuth works for now)
+* mongoURI to connect to Mongo database (use [mLab](https://mlab.com/) service for example)
+* cookieKey - can be any arbitrary string
+* Stripe keys - you need to have valid account on [Stripe](https://stripe.com/)
+* SendGrid key - you need to have valid account on [SendGrid](https://sendgrid.com/)
+* redirectDomain - used for being able run from localhost
 
 # Techstack
 #### Client
@@ -28,7 +49,7 @@ Here is a running [demo](https://stormy-reaches-19231.herokuapp.com/) on Heroku.
 * [Mongoose](https://mongoosejs.com/) (MongoDB persistence)
 * [Sendgrid](https://sendgrid.com/) (Sending mails, webhooks for survey answers)
 
-#### Services used
+#### Services used on production instance
 * [mLab](https://mlab.com/) (hosting MongoDB instances)
-* Sendgrid
-* Stripe
+* [Stripe](https://stripe.com/)
+* [SendGrid](https://sendgrid.com/)
