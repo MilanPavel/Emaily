@@ -18,7 +18,7 @@
     "build": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
     "heroku-postbuild": "npm run build",
     "webhook": "lt -p 5000 -s fhjgnvjjgiddhgjgjvj",
-    "test": "jest"
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",
