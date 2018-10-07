@@ -31,6 +31,10 @@ All keys must be correctly filled out. You need to suply following info:
 * SendGrid key - you need to have valid account on [SendGrid](https://sendgrid.com/)
 * redirectDomain - used for being able run from localhost
 
+# Run Tests
+* Cd _root_ directory
+* Perform `npm run test`
+
 # Techstack
 #### Client
 * React
@@ -39,7 +43,7 @@ All keys must be correctly filled out. You need to suply following info:
 * [ReduxForm](https://redux-form.com/) (form validation, fields persistence in store)
 * [Axios](https://github.com/axios/axios) (http client)
 * [materializecss](https://materializecss.com/) (styles)
-* create-react-app
+* [create-react-app](https://github.com/facebook/create-react-app)
 
 #### Server
 * Nodejs
@@ -48,6 +52,11 @@ All keys must be correctly filled out. You need to suply following info:
 * [Stripe](https://stripe.com/) (Payments)
 * [Mongoose](https://mongoosejs.com/) (MongoDB persistence)
 * [Sendgrid](https://sendgrid.com/) (Sending mails, webhooks for survey answers)
+
+#### Testing
+* [Jest](https://jestjs.io/)
+* [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+* [Travis-ci](https://travis-ci.org/) for CI
 
 #### Services used on production instance
 * [mLab](https://mlab.com/) (hosting MongoDB instances)
