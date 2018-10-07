@@ -6,7 +6,7 @@ beforeEach(async () => {
   jest.setTimeout(15000);
 
   page = await Page.build();
-  await page.goto("localhost:3000/surveys");
+  await page.goto("http://localhost:3000/surveys");
 });
 
 afterEach(async () => {
