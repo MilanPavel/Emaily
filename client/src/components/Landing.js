@@ -8,11 +8,11 @@ const Landing = () => {
         <nav className="transparent">
           <div className="container">
             <div className="nav-wrapper">
-              <a href="#" className="brand-logo">
+              <a href="#!" className="brand-logo">
                 Emaily
               </a>
               <a
-                href="#"
+                href="#!"
                 data-activates="mobile-nav"
                 className="button-collapse"
               >
@@ -25,10 +25,10 @@ const Landing = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="solutions.html">Features</a>
+                  <a href="#features">Features</a>
                 </li>
                 <li>
-                  <a href="signup.html">Screenshots</a>
+                  <a href="#screenshots">Screenshots</a>
                 </li>
                 <li>
                   <a href="/auth/google" className="btn purple">
@@ -66,7 +66,7 @@ const Landing = () => {
         </div>
       </header>
 
-      <section className="section section-icons center">
+      <section id="features " className="section section-icons center">
         <div className="container">
           <div className="row">
             <div className="col s12 m4">
